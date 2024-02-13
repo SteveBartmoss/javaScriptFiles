@@ -22,3 +22,21 @@ const lastName='Parker';
 const fullName=`${firstName} ${lastName}`; //asi se puede usar un template string
 
 console.log(fullName);
+
+//obejto literal
+
+const persona={ //asi se declara un objeto
+    apodo: 'Steve',
+    alias: 'Wozniak',
+    edad: 24,
+    direction: {
+        ciudad: 'New York',
+        postal: 4654
+    }
+}
+
+const persona2 = {...persona}; //con esto se crea un nuevo objeto, ya que asi se rompe la referencia al objeto persona
+persona2.alias='Alan'
+
+console.log(persona);
+console.log(persona2);
