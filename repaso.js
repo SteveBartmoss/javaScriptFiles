@@ -40,3 +40,19 @@ persona2.alias='Alan'
 
 console.log(persona);
 console.log(persona2);
+
+//arelgos 
+
+const lista=[1,2,3,4,5]; //asi se declara un arreglo
+
+lista.push(6); //asi se puede agregar un elemento a un arreglo
+
+const lista2=[...lista]; //asi se puede clonar un arreglo usando el operador spread
+
+lista2.push(7);
+
+const lista3=lista2.map(num=>num*2); //con esto duplicacmos los elementos y ademas creamos un nuevo arreglo
+
+console.log(lista);
+console.log(lista2);
+console.log(lista3);
