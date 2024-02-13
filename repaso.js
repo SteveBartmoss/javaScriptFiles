@@ -56,3 +56,30 @@ const lista3=lista2.map(num=>num*2); //con esto duplicacmos los elementos y adem
 console.log(lista);
 console.log(lista2);
 console.log(lista3);
+
+
+//funciones 
+
+function saludar(nombre){
+    return `Hola ${nombre}` //asi se imprime un valor recibido por una funcion
+}
+
+const hello =function(){ //asi se declara una funcion de manera mas segura
+    return 'Esta forma es segura';
+}
+
+const flecha=()=>{ //asi se declara una fucnion flecha
+    return 'Esta es una funcion flecha';
+}
+
+const getData=()=>{
+    return {
+        id: 1,
+        alias: 'Spiderman'
+    }
+}
+
+console.log(saludar(nombre));
+console.log(hello());
+console.log(flecha());
+console.log(getData());
