@@ -12,3 +12,13 @@ if(true){
 }
 
 console.log(nombre);
+
+//template literales
+
+const firstName='Peter';
+const lastName='Parker';
+
+
+const fullName=`${firstName} ${lastName}`; //asi se puede usar un template string
+
+console.log(fullName);
