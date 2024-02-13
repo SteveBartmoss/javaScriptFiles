@@ -114,3 +114,12 @@ const createHero = ({name,age,codeName,power='Ninguno'})=>{ //se puede destrucct
 }
 
 console.log(createHero(person));
+
+//destructuracion de arreglos
+
+const characters = ['Gojo','Itadori','Nobara'];
+
+const [primero,segundo,tercero,cuarto='empty'] = characters; //para destruccturar un arreglo se tiene que usar [] en lugar de {}
+
+console.log(primero,segundo,tercero);
+
