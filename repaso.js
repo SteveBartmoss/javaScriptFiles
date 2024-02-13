@@ -86,3 +86,31 @@ console.log(hello());
 console.log(flecha());
 console.log(getData());
 console.log(existe);
+
+
+//destructuracion de objetos
+
+const person={
+    name:'Steve',
+    age: 24,
+    codeName: 'Spiderman'
+}
+
+const {name,age,codeName,power='Ninguno'} = person; //asi se destrucctura un objeto
+
+console.log(name);
+console.log(age);
+console.log(codeName);
+console.log(power);
+
+const createHero = ({name,age,codeName,power='Ninguno'})=>{ //se puede destruccturar el objeto que recibe la funcion
+    return {
+        id: 117,
+        name: name, // si la propieda tiene el mismop nombre que el parametro destructurado se puede omitir el pamaretro
+        age,
+        codeName,
+        power
+    }
+}
+
+console.log(createHero(person));
