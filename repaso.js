@@ -79,7 +79,10 @@ const getData=()=>{
     }
 }
 
+const existe = lista.some(num=> num === 4); //de esta forma se puede usar una funcion flecha de manera util
+
 console.log(saludar(nombre));
 console.log(hello());
 console.log(flecha());
 console.log(getData());
+console.log(existe);
