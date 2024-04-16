@@ -24,6 +24,19 @@ const code= `
 const leters=/[a-zA-z]/
 const simbols=/[{},."()-/;]/
 
+const parser=(entrada)=>{
+    let estado=0;
+    let iterador=0;
+
+    while(iterador<entrada){
+        switch(estado){
+            case 0:
+                
+                break;
+        }
+    }
+}
+
 for(let i=0; i<code.length; i++){
     if(leters.test(code[i])){
         console.log(code[i])
