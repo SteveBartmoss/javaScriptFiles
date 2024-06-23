@@ -15,7 +15,7 @@ for (let i = 0; i < 10; i++) {
 }
 
 
-function* fibonacciGenerator() {
+function* fibonacciGenerator2() {
     let a = 0, b = 1;
     while (true) {
         yield a;
@@ -24,7 +24,7 @@ function* fibonacciGenerator() {
 }
 
 // Ejemplo de uso de la función generadora
-const fibGen = fibonacciGenerator();
+const fibGen2 = fibonacciGenerator2();
 for (let i = 0; i < 10; i++) {
     console.log(fibGen.next().value);
 }
