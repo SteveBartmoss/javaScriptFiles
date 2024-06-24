@@ -1,5 +1,7 @@
 export function generateUniqueId() {
-    return Date.now().toString(36) + Math.random.toString(36).substring(2)
+    const timestamp = Date.now().toString(36)
+    const randomPart = Math.random().toString(36).substring(2)
+    return `${timestamp}-${randomPart}`
 }
 
 export function generateUniqueIdV2() {
