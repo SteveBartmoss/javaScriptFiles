@@ -23,7 +23,7 @@ function generateCodeObjects(sourceCode){
     return codeObjects
 }
 
-let codeExample= '<button onClick = { evento } className = { `btn-basic ${variant} ${color}` } > { children } </button>'
+let codeExample= '<button onClick = { evento } className = { `btn-basic ${variant} ${color} ` } > { children } </button>'
 
 
 console.log(tokenDivider(codeExample))
