@@ -32,3 +32,12 @@ function showCancel(){
 }
 
 ask("Estas de acuerdo?",showOk, showCancel)
+
+//funcion mediante callbaks 
+
+function ask(question, yes,no){
+    if(confirm(question)) yes()
+    else no()
+}
+
+ask("Estade acuerdo?", function(){alert("Estas de acuerdo")}, function(){alert("Cancelaste la ejecucion")})
