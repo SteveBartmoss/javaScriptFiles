@@ -52,7 +52,7 @@ function isPalindrome(number) {
       { symbol: "X", value: 10 },
       { symbol: "L", value: 50 },
       { symbol: "C", value: 100 },
-      { symbol: "C", value: 500 },
+      { symbol: "D", value: 500 },
       { symbol: "M", value: 1000 },
     ];
   
