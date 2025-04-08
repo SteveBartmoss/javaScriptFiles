@@ -62,9 +62,6 @@ function isPalindrome(number) {
     let iterador = 0;
   
     while (iterador < romanNumber.length) {
-      //console.log(swap);
-      //console.log(result);
-  
       switch (state) {
         case 0:
           if (romanNumber[iterador] === "I") {
@@ -148,4 +145,6 @@ function isPalindrome(number) {
   console.log(romanToInt("III"));
   console.log(romanToInt("LVIII"));
   console.log(romanToInt("MCMXCIV"));
+  console.log(romanToInt("DCXXI"));
+  console.log(romanToInt("MDCCCLXXXIV"));
   
